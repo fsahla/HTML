@@ -1,0 +1,28 @@
+<html>
+<body>
+<script type="text/javascript">
+var n,r,s,rev,temp;
+n=parseInt(prompt("enter the number"));
+temp=n;
+s=0;
+rev=0;
+while(n>0)
+{
+  r=n%10;
+  s=s+r;
+rev=(rev*10)+r;
+n=parseInt(n/10);
+}
+document.write("Sum=",s," ");
+document.write("Reverse=",rev," ");
+if(rev==temp)
+{
+ document.write(temp,"is palindrome");                                
+}
+else
+{
+document.write(temp,"is not palindrome");
+}
+</script>
+</body>
+</html>

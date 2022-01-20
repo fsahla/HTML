@@ -1,0 +1,23 @@
+<html>
+<body>
+<script type="text/javascript">
+var n,r,temp,s;
+s=0;
+n=parseInt(prompt("enter the number"));
+temp=n;
+while(n>0)
+{
+  r=n%10;
+ s=s+(r*r*r);
+n=parseInt(n/10);
+}
+if(s==temp)
+{
+document.write("the number",temp,"is armstrong");
+}
+else
+{
+document.write("The number",temp,"is not armstrong");
+}
+</script></body>
+</html>
